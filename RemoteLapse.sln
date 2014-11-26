@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30626.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteLapse.Droid", "RemoteLapse.Android\RemoteLapse.Droid.csproj", "{14619398-F87D-4BE8-8C7C-74A61B26BCFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteLapse.Data", "RemoteLapse.Data\RemoteLapse.Data.csproj", "{62676D0B-1CF9-4D4C-A0C2-5F7CE08E9120}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14619398-F87D-4BE8-8C7C-74A61B26BCFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14619398-F87D-4BE8-8C7C-74A61B26BCFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14619398-F87D-4BE8-8C7C-74A61B26BCFE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{14619398-F87D-4BE8-8C7C-74A61B26BCFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14619398-F87D-4BE8-8C7C-74A61B26BCFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14619398-F87D-4BE8-8C7C-74A61B26BCFE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{62676D0B-1CF9-4D4C-A0C2-5F7CE08E9120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62676D0B-1CF9-4D4C-A0C2-5F7CE08E9120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62676D0B-1CF9-4D4C-A0C2-5F7CE08E9120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62676D0B-1CF9-4D4C-A0C2-5F7CE08E9120}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
