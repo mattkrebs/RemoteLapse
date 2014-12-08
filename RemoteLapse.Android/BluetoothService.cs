@@ -21,7 +21,7 @@ namespace RemoteLapse.Droid
         REQUEST_CONNECTED_DEVICE = 1,
         REQUEST_ENABLE_BT = 2
     }
-    public class BluetoothService
+    public class BluetoothManager
     {
         private BluetoothAdapter mBluetoothAdapter = null;
         private BluetoothSocket btSocket = null;
@@ -33,7 +33,7 @@ namespace RemoteLapse.Droid
         //Id Unico de comunicacion
         private static UUID MY_UUID = UUID.FromString("00001101-0000-1000-8000-00805F9B34FB");
 
-        public BluetoothService()
+        public BluetoothManager()
         {
             mBluetoothAdapter = BluetoothAdapter.DefaultAdapter;
             if (!mBluetoothAdapter.Enable())
@@ -45,6 +45,22 @@ namespace RemoteLapse.Droid
                 //Bluetooth Does Not Exist or is Busy
             }
         }
+
+
+        private static BluetoothManager instance;
+        public static BluetoothManager Instance
+       {
+          get 
+          {
+             if (instance == null)
+             {
+                 instance = new BluetoothManager();
+             }
+             return instance;
+          }
+       }
+
+
         public bool IsEnabled
         {
             get

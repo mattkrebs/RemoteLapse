@@ -63,41 +63,65 @@ namespace RemoteLapse.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060006
-			public const int button_scan = 2131099654;
-			
-			// aapt resource value: 0x7f060001
-			public const int cancel = 2131099649;
-			
-			// aapt resource value: 0x7f060000
-			public const int deviceList = 2131099648;
-			
-			// aapt resource value: 0x7f06000b
-			public const int discoverable = 2131099659;
-			
-			// aapt resource value: 0x7f060007
-			public const int fragmentContainer = 2131099655;
-			
-			// aapt resource value: 0x7f060005
-			public const int new_devices = 2131099653;
-			
 			// aapt resource value: 0x7f060003
-			public const int paired_devices = 2131099651;
+			public const int btnPause = 2131099651;
 			
-			// aapt resource value: 0x7f06000a
-			public const int scan = 2131099658;
-			
-			// aapt resource value: 0x7f060004
-			public const int title_new_devices = 2131099652;
+			// aapt resource value: 0x7f06000f
+			public const int btnSave = 2131099663;
 			
 			// aapt resource value: 0x7f060002
-			public const int title_paired_devices = 2131099650;
+			public const int btnStart = 2131099650;
 			
-			// aapt resource value: 0x7f060008
-			public const int txtSetting = 2131099656;
+			// aapt resource value: 0x7f06000a
+			public const int button_scan = 2131099658;
+			
+			// aapt resource value: 0x7f060005
+			public const int cancel = 2131099653;
+			
+			// aapt resource value: 0x7f060004
+			public const int deviceList = 2131099652;
+			
+			// aapt resource value: 0x7f060013
+			public const int discoverable = 2131099667;
+			
+			// aapt resource value: 0x7f06000b
+			public const int fragmentContainer = 2131099659;
+			
+			// aapt resource value: 0x7f060001
+			public const int linearLayout1 = 2131099649;
 			
 			// aapt resource value: 0x7f060009
-			public const int upload = 2131099657;
+			public const int new_devices = 2131099657;
+			
+			// aapt resource value: 0x7f060007
+			public const int paired_devices = 2131099655;
+			
+			// aapt resource value: 0x7f060012
+			public const int scan = 2131099666;
+			
+			// aapt resource value: 0x7f06000c
+			public const int textView1 = 2131099660;
+			
+			// aapt resource value: 0x7f060008
+			public const int title_new_devices = 2131099656;
+			
+			// aapt resource value: 0x7f060006
+			public const int title_paired_devices = 2131099654;
+			
+			// aapt resource value: 0x7f060000
+			public const int txtCount = 2131099648;
+			
+			// aapt resource value: 0x7f06000e
+			public const int txtRPMs = 2131099662;
+			
+			// aapt resource value: 0x7f06000d
+			public const int txtRailLength = 2131099661;
+			
+			// aapt resource value: 0x7f060010
+			public const int txtSetting = 2131099664;
+			
+			// aapt resource value: 0x7f060011
+			public const int upload = 2131099665;
 			
 			static Id()
 			{
@@ -113,19 +137,25 @@ namespace RemoteLapse.Droid
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int DeviceDialogFragment = 2130903040;
+			public const int ControlFragment = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int DeviceList = 2130903041;
+			public const int DeviceDialogFragment = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int DeviceName = 2130903042;
+			public const int DeviceList = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Main = 2130903043;
+			public const int DeviceName = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int SettingFragment = 2130903044;
+			public const int Main = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int PreferenceFragment = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int SettingFragment = 2130903046;
 			
 			static Layout()
 			{

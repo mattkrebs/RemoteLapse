@@ -17,7 +17,7 @@ namespace RemoteLapse.Droid
     {
        
         // Member object for the chat services
-        private BluetoothService btService = null;
+       
         
         protected override void OnCreate(Bundle bundle)
         {
@@ -27,12 +27,14 @@ namespace RemoteLapse.Droid
 
             this.ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
 
-            AddTab("FPS", Android.Resource.Drawable.IcMediaPlay, new FPSFragment());
+            AddTab("Control", Android.Resource.Drawable.IcMediaPlay, new ControlFragment());
             AddTab("Length", Android.Resource.Drawable.IcMenuGallery, new LengthFragment());
             AddTab("Duration", Android.Resource.Drawable.IcMenuGallery, new DurationFragment());
+            AddTab("Settings", Android.Resource.Drawable.IcMenuGallery, new PreferenceFragment());
 
-            btService = new BluetoothService();
 
+
+            
            
         }
         protected override void OnStart()
@@ -41,7 +43,7 @@ namespace RemoteLapse.Droid
            
             // If BT is not on, request that it be enabled.
             // setupChat() will then be called during onActivityResult
-            if (!btService.IsEnabled)
+            if (!BluetoothManager.Instance.IsEnabled)
             {
                 Intent enableIntent = new Intent(BluetoothAdapter.ActionRequestEnable);
                 StartActivityForResult(enableIntent, (int)BluetoothRequestType.REQUEST_ENABLE_BT);
@@ -145,7 +147,7 @@ namespace RemoteLapse.Droid
                         // Get the device MAC address
                         var address = data.Extras.GetString(DeviceListActivity.EXTRA_DEVICE_ADDRESS);
                         // Get the BLuetoothDevice object
-                        btService.Connect(address);
+                        BluetoothManager.Instance.Connect(address);
                     }
                     break;
                 case (int)BluetoothRequestType.REQUEST_ENABLE_BT:
@@ -183,7 +185,7 @@ namespace RemoteLapse.Droid
                     StartActivityForResult(serverIntent, (int)BluetoothRequestType.REQUEST_CONNECTED_DEVICE);
                     return true;
                 case Resource.Id.upload:
-                    btService.UploadSettings();
+                    BluetoothManager.Instance.UploadSettings();
                     return true;
             }
             return false;
