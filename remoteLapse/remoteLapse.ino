@@ -47,8 +47,9 @@ void motorLeft() {
   delay(pulse);  
   digitalWrite(ledPin, LOW);  
   digitalWrite(motorPin, LOW);
+  digitalWrite(relay, HIGH);
 
-  Serial.println("Move Forward: ");
+  Serial.println("Move Left: ");
   Serial.println(interval);
 }
 
@@ -59,10 +60,10 @@ void motorRight() {
   digitalWrite(ledPin, HIGH);
   delay(pulse);  
   digitalWrite(ledPin, LOW);
-  digitalWrite(motorPin, LOW);
-
+  digitalWrite(motorPin, HIGH);
+  digitalWrite(relay, LOW);
   
-  Serial.println("Move Forward: ");
+  Serial.println("Move Rig: ");
   Serial.println(interval);
 }
 
@@ -112,7 +113,7 @@ void loop()                     // run over and over again
       delay(500);
       digitalWrite(shutterPin, LOW);
       motorLeft(); 
-   delay(interval);     
+      delay(interval);     
       //Move
       //Pause    
     } 
@@ -135,5 +136,6 @@ void loop()                     // run over and over again
     }else{
       start = 0;
     }
+  }
   
 }

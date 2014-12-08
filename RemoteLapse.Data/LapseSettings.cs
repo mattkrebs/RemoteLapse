@@ -14,6 +14,8 @@ namespace RemoteLapse.Data
         //limit in minutes
         private const int DurationLimit = 240;
 
+        private const int PulseTimePerMillimeter = 100;
+
         private static readonly LapseSettings instance = new LapseSettings();
 
         private LapseSettings() { }
@@ -89,10 +91,10 @@ namespace RemoteLapse.Data
         public string SettingsString()
         {
             
-
+            
 
             // (FPS * Lenght
-            var frames = (FPS * Lenght;
+            var frames = (FPS * Lenght);
 
             var pulse = 0;
             var interval = Math.Abs(frames/ (Duration * 60));
@@ -102,5 +104,9 @@ namespace RemoteLapse.Data
             return string.Format("*{0}|{1}|{2}|{3}|{4}#", 1, 300, 2000, 150, 0);
         }
 
+
+        public int RPMs { get; set; }
+
+        public int RailLength { get; set; }
     }
 }
