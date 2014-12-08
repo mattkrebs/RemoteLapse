@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Camera Rail and Dolly Settings">
+        <EditTextPreference
+            android:key="pref_raillength"
+            android:title="Rail Length"
+            android:summary="Lenght of the Camera Rail in millimeters"
+            android:dialogTitle="Enter the Lenght of Rail (MM)" />
+        <EditTextPreference
+            android:key="pref_motorSpeed"
+            android:title="Max Motor Speed"
+            android:summary="Maximum Speed of Motor in RPM's"
+            android:dialogTitle="Enter the RPM's of the motor" />
+    </PreferenceCategory>
+</PreferenceScreen>
